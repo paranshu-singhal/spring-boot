@@ -1,0 +1,27 @@
+branch-defaults:
+  default:
+    environment: TestApp-env
+  master:
+    environment: TestApp-env-1
+deploy:
+  artifact: target/mvc-0.0.1-SNAPSHOT.jar
+environment-defaults:
+  TestApp-env:
+    branch: null
+    repository: null
+  TestApp-env-2:
+    branch: master
+    repository: origin
+global:
+  application_name: test-app
+  default_ec2_keyname: null
+  default_platform: arn:aws:elasticbeanstalk:us-west-1::platform/Tomcat 8.5 with Java
+    8 running on 64bit Amazon Linux/3.3.1
+  default_region: us-west-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: git
+  workspace_type: Application

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.paranshusinghal.springmvc.mvc.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.761 s - in com.paranshusinghal.springmvc.mvc.DemoApplicationTests
