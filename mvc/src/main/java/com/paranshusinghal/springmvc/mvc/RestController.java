@@ -38,6 +38,4 @@ public class RestController {
 		model.put("password", password);
 		return "welcome";
 	}
-
-    
 }
