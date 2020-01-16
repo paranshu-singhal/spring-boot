@@ -1,0 +1,14 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "954875065177.dkr.ecr.us-west-1.amazonaws.com/paranshu",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 8080,
+        "HostPort": 80
+      }
+    ],
+    "Entrypoint": "exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar mvc.jar"
+  }
