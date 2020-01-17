@@ -1,12 +1,13 @@
 branch-defaults:
   default:
-    environment: spring-mvc-docker-env1
+    environment: spring-mvc-multidocker-env4
     group_suffix: null
 global:
   application_name: spring-mvc-docker
   branch: null
   default_ec2_keyname: null
-  default_platform: docker
+  default_platform: 64bit Amazon Linux 2018.03 v2.18.0 running Multi-container Docker
+    18.09.9-ce (Generic)
   default_region: us-west-2
   include_git_submodules: true
   instance_profile: null

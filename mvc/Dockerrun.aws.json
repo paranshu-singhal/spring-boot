@@ -1,14 +1,15 @@
 {
-    "AWSEBDockerrunVersion": "1",
-    "Image": {
-      "Name": "954875065177.dkr.ecr.us-west-1.amazonaws.com/paranshu",
-      "Update": "true"
-    },
-    "Ports": [
+    "AWSEBDockerrunVersion": "2",
+    "containerDefinitions": [
       {
-        "ContainerPort": 8080,
-        "HostPort": 80
+        "name": "spring-mvc",
+        "image": "954875065177.dkr.ecr.us-west-2.amazonaws.com/paranshu:latest",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [{
+            "hostPort": 80,
+            "containerPort": 8080
+          }]
       }
-    ],
-    "Entrypoint": "exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar mvc.jar"
+    ]
   }
